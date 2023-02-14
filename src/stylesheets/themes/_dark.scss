@@ -1,0 +1,27 @@
+@use "sass:color";
+@use "colors";
+@use "light";
+
+@mixin theme--dark {
+  @include light.theme--light;
+  --theme-bg: #{colors.$clr-neutral-800};
+  --theme-clr: #{colors.$clr-neutral-100};
+  --theme-clr-focus: #{colors.$clr-neutral-100};
+
+  --theme-header-bg: #{colors.$clr-neutral-700};
+
+  --theme-icon-fill: #{colors.$clr-neutral-100};
+  --theme-icon-stroke: transparent;
+  --theme-icon-clr: #{colors.$clr-neutral-100};
+
+  --theme-element-bg: #{colors.$clr-neutral-700};
+
+  --theme-card-bg: #{colors.$clr-neutral-700};
+
+  --theme-btn-bg: #{colors.$clr-neutral-700};
+}
+
+.theme--dark {
+  @include theme--dark;
+  color-scheme: only dark;
+}

@@ -1,0 +1,7 @@
+@use "../abstracts";
+
+.input {
+  margin: 0.5rem;
+  padding-block: abstracts.pxToRem(14px);
+  padding-inline: 2rem;
+}

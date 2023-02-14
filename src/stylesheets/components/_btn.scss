@@ -1,0 +1,21 @@
+@use "../abstracts";
+
+.btn {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0;
+  padding-block: 0.375rem;
+  padding-inline: 1.5rem;
+  width: fit-content;
+  background-color: transparent;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  box-shadow: var(--theme-btn-shadow);
+  background-color: var(--theme-btn-bg);
+}
