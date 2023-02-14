@@ -2,7 +2,8 @@
 
 [![Deploy Site to GitHub Pages](https://github.com/jefcooper/fem-arch-studio/actions/workflows/static.yml/badge.svg)](https://github.com/jefcooper/fem-arch-studio/actions/workflows/static.yml)
 
-Live on Github Pages: https://jefcooper.github.io/fem-arch-studio
+- Live on Github Pages: https://jefcooper.github.io/fem-arch-studio
+- Live on Vercel: https://fem-arch-studio.vercel.app
 
 This is a solution to the [Template](https://www.frontendmentor.io/challenges/X). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -28,8 +29,8 @@ This is a solution to the [Template](https://www.frontendmentor.io/challenges/X)
 
 ### Links
 
-- Solution URL: [Github Repository](https://github.com/jefcooper/fem-template)
-- Live Site URL: [Github Pages](https://jefcooper.github.io/fem-template)
+- Solution URL: [Github Repository](https://github.com/jefcooper/fem-arch-studio)
+- Live Site URL: [Github Pages](https://jefcooper.github.io/fem-arch-studio)
 
 ## My process
 
