@@ -1,0 +1,41 @@
+.card {
+  position: relative;
+  width: 16.5rem;
+  height: 21rem;
+
+  background-color: var(--theme-card-bg);
+  box-shadow: var(--theme-card-shadow);
+}
+.card__flag {
+  box-shadow: var(--theme-card-shadow);
+  max-height: 52%;
+  margin-inline: auto;
+}
+.card__population {
+}
+.card__info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  z-index: 2;
+}
+.card__info dl {
+  margin-top: 1rem;
+}
+.card__info dt {
+  display: inline;
+}
+.card__info dt::after {
+  content: ":";
+  margin-right: 0.5rem;
+}
+.card__info dd {
+  display: inline;
+}
+.card__info dd:after {
+  content: "";
+  display: block;
+  margin-bottom: 0.5rem;
+}

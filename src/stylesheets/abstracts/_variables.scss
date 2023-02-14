@@ -1,0 +1,13 @@
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  "tablet": 768px,
+  "desktop": 1024px,
+) !default;
+
+:root {
+  --container-max-width: 1279px;
+  --container-padding-inline: 1rem;
+  --transition-default-time: 150ms;
+}

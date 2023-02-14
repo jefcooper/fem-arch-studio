@@ -1,0 +1,16 @@
+@use "../abstracts";
+
+.dropdown {
+  margin: 0.5rem;
+}
+
+.dropdown__select {
+  padding-block: abstracts.pxToRem(14px);
+  padding-inline: 2rem;
+  border: none;
+  border-right: 1rem solid transparent;
+  box-shadow: var(--theme-element-shadow);
+  border-radius: var(--theme-element-border-radius);
+  background-color: var(--theme-element-bg);
+  outline-color: var(--theme-clr-focus);
+}
