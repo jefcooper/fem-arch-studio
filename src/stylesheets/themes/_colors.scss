@@ -1,6 +1,12 @@
-$clr-neutral-100: hsl(0, 0%, 100%); // White
-$clr-neutral-200: hsl(0, 0%, 98%); // Very Light Gray (Light Mode Background)
-$clr-neutral-400: hsl(0, 0%, 52%); // Dark Gray (Light Mode Input)
-$clr-neutral-700: hsl(209, 23%, 22%); // Dark Blue (Dark Mode Elements)
-$clr-neutral-800: hsl(207, 26%, 17%); // Very Dark Blue (Dark Mode Background)
-$clr-neutral-900: hsl(200, 15%, 8%); // Very Dark Blue (Light Mode Text)
+$clr-neutral-50: hsl(0, 0%, 100%); // #FFFFFF
+$clr-neutral-100: hsl(230, 21%, 95%); // #EEEFF4
+$clr-neutral-150: hsl(0, 5%, 91%); // #EAE8E8
+$clr-neutral-200: hsl(0, 0%, 88%); // #E1E1E1
+$clr-neutral-250: hsl(0, 0%, 85%); // #D8D8D8
+$clr-neutral-300: hsl(225, 17%, 82%); // #C8CCD8
+$clr-neutral-400: hsl(223, 7%, 53%); // #7D828F
+$clr-neutral-700: hsl(226, 6%, 40%); // #60636D
+$clr-neutral-800: hsl(225, 13%, 12%); // #1B1D23
+$clr-neutral-900: hsl(0, 0%, 0%); // #000000
+
+$clr-accent-400: hsl(0, 68%, 61%); // #DF5656

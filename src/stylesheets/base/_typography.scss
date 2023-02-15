@@ -7,102 +7,12 @@
 @use "../abstracts/functions";
 
 @mixin font-base {
-  font-family: "Nunito Sans";
-  font-weight: 300;
+  font-family: "League Spartan";
+  font-weight: 500;
   font-size: 1rem;
   font-style: normal;
   text-decoration: none;
   line-height: 1;
-}
-
-/*
- *  heading--1: Logo title, 'Where in the world?'
- */
-.heading--1 {
-  @include font-base;
-  font-weight: 800;
-  font-size: functions.pxToRem(14px);
-  line-height: 1.3;
-}
-
-/*
- *  heading--2: Country Name
- */
-.heading--2 {
-  @include font-base;
-  font-weight: 800;
-  font-size: 1.125rem;
-  line-height: 1.3;
-}
-
-/*
- *  heading--3: Country Name on detail page
- */
-.heading--3 {
-  @include font-base;
-  font-weight: 800;
-  font-size: 1.375rem;
-  line-height: 1.375;
-}
-
-/*
- *  heading--4: Border Countries on detail page
- */
-.heading--4 {
-  @include font-base;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-/*
- *  label--1: Stats, Population: etc.
- */
-.label--1 {
-  @include font-base;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.1429;
-}
-
-/*
- *  label--2: Dark Mode
- */
-.label--2 {
-  @include font-base;
-  font-weight: 600;
-  font-size: 0.75rem;
-  line-height: 1.3;
-}
-
-/*
- *  label--3: Dropdown menu
- */
-.label--3 {
-  @include font-base;
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1.3;
-}
-
-/*
- *  label--4: Back button
- */
-.label--4 {
-  @include font-base;
-  font-weight: 300;
-  font-size: 0.875rem;
-  line-height: 1.43;
-}
-
-/*
- *  text--1: Stats, Population etc. number portion
- */
-.text--1 {
-  @include font-base;
-  font-weight: 300;
-  font-size: 0.875rem;
-  line-height: 1.1429;
 }
 
 .text--center {
@@ -113,21 +23,4 @@
   Tablet breakpoint
  ----------------------------------------------------------------------------*/
 @include mixins.media-breakpoint("tablet") {
-  .heading--1 {
-    font-size: 1.5rem;
-  }
-  .heading--3 {
-    font-size: 2rem;
-  }
-  .label--2 {
-    font-size: 1rem;
-  }
-  .label--3 {
-    font-size: 0.875rem;
-    line-height: 1.43;
-  }
-  .label--4 {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
 }

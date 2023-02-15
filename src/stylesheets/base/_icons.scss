@@ -2,18 +2,11 @@
   display: inline-block;
 }
 
-.icon--moon {
-  width: 20px;
-  height: 20px;
+.icon--logo {
+  width: 97px;
+  height: 40px;
   fill: var(--theme-icon-fill);
   stroke: var(--theme-icon-stroke);
-}
-
-.icon--search {
-  width: 18px;
-  height: 18px;
-  fill: var(--theme-icon-stroke);
-  stroke: none;
 }
 
 .icon--left-arrow {

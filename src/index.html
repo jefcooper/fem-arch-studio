@@ -7,13 +7,302 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Front-end Mentor Arch Studio multi-page website challenge">
   <meta name="color-scheme" content="dark">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
   <link rel="stylesheet" href="stylesheets/main.scss">
   <script src="scripts/script.js" type="module"></script>
-  <title>Document</title>
+
+  <title>Arch Studio Home</title>
 </head>
 
-<body>
-  <h1>Github Respository Template for Front-end Mentor Challenges</h1>
+<body class="body">
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li>
+          <a href="#">
+            <span class="visually-hidden">Home</span>
+            <svg class="icon icon--logo" aria-hidden="true">
+              <use href="./assets/icons/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Arch Homepage</h1>
+    <article class="hero">
+      <h2 class="visually-hidden">Highlighted Projects</h2>
+      <ul class="carousel" data-carousel>
+        <li class="hero__card">
+          <picture class="carousel__picture">
+            <source media="(min-width: 1024px)" width="1110" height="720"
+              srcset="assets/home/desktop/image-hero-paramour.webp, assets/home/desktop/image-hero-paramour.jpg">
+            <source media="(min-width: 768px)" width="573" height="720"
+              srcset="assets/home/tablet/image-hero-paramour.webp, assets/home/tablet/image-hero-paramour.jpg">
+            <img width="375" height="560" class="carousel__img" src="assets/home/mobile/image-hero-paramour.jpg"
+              srcset="assets/home/mobile/image-hero-paramour.webp, assets/home/mobile/image-hero-paramour.jpg"
+              alt="Project Paramour building facade">
+          </picture>
+          <h3 class="heading--1">
+            Project Paramour
+          </h3>
+
+          <p class="text--1">
+            Project made for an art museum near Southwest London. Project Paramour is
+            a statement of bold, modern architecture.
+          </p>
+
+          <a href="portfolio.html" class="btn btn--primary">
+            See Our Portfolio
+          </a>
+        </li>
+        <li class="hero__card">
+          <picture class="carousel__picture">
+            <source media="(min-width: 1024px)" width="1110" height="720"
+              srcset="assets/home/desktop/image-hero-seraph.webp, assets/home/desktop/image-hero-seraph.jpg">
+            <source media="(min-width: 768px)" width="573" height="720"
+              srcset="assets/home/tablet/image-hero-seraph.webp, assets/home/tablet/image-hero-seraph.jpg">
+            <img width="375" height="560" class="carousel__img" src="assets/home/mobile/image-hero-seraph.jpg"
+              srcset="assets/home/mobile/image-hero-seraph.webp, assets/home/mobile/image-hero-seraph.jpg"
+              alt="Project Seraph interior">
+          </picture>
+          <h3 class="heading--1">
+            Seraph Station
+          </h3>
+
+          <p class="text--1">
+            The Seraph Station project challenged us to design a unique station that would
+            transport people through time. The result is a fresh and futuristic model
+            inspired by space stations.
+          </p>
+
+          <a href="portfolio.html" class="btn btn--primary">
+            See Our Portfolio
+          </a>
+        </li>
+
+        <li class="hero__card">
+          <picture class="carousel__picture">
+            <source media="(min-width: 1024px)" width="1110" height="720"
+              srcset="assets/home/desktop/image-hero-federal.webp, assets/home/desktop/image-hero-federal.jpg">
+            <source media="(min-width: 768px)" width="573" height="720"
+              srcset="assets/home/tablet/image-hero-federal.webp, assets/home/tablet/image-hero-federal.jpg">
+            <img width="375" height="560" class="carousel__img" src="assets/home/mobile/image-hero-federal.jpg"
+              srcset="assets/home/mobile/image-hero-federal.webp, assets/home/mobile/image-hero-federal.jpg"
+              alt="Federal Tower Project Facade">
+          </picture>
+          <h3 class="heading--1">
+            Federal II Tower
+          </h3>
+
+          <p class="text--1">
+            A sequel theme project for a tower originally built in the 1800s. We achieved
+            this with a striking look of brutal minimalism with modern touches.
+          </p>
+
+          <a href="portfolio.html" class="btn btn--primary">
+            See Our Portfolio
+          </a>
+        </li>
+
+        <li class="hero__card">
+          <picture class="carousel__picture">
+            <source media="(min-width: 1024px)" width="1110" height="720"
+              srcset="assets/home/desktop/image-hero-trinity.webp, assets/home/desktop/image-hero-trinity.jpg">
+            <source media="(min-width: 768px)" width="573" height="720"
+              srcset="assets/home/tablet/image-hero-trinity.webp, assets/home/tablet/image-hero-trinity.jpg">
+            <img width="375" height="560" class="carousel__img" src="assets/home/mobile/image-hero-trinity.jpg"
+              srcset="assets/home/mobile/image-hero-trinity.webp, assets/home/mobile/image-hero-trinity.jpg"
+              alt="Trinity Bank Tower Facade">
+          </picture>
+          <h3 class="heading--1">
+            Trinity Bank Tower
+          </h3>
+
+          <p class="text--1">
+            Trinity Bank challenged us to make a concept for a 84 story building located
+            in the middle of a city with a high earthquake frequency. For this project we
+            used curves to blend design and stability to meet our objectives.
+          </p>
+
+          <a href="portfolio.html" class="btn btn--primary">
+            See Our Portfolio
+          </a>
+        </li>
+      </ul>
+
+      <div class="carousel__controls" data-carousel-controls>
+        <ul>
+          <li>
+            01
+          </li>
+          <li>
+            02
+          </li>
+          <li>
+            03
+          </li>
+          <li>
+            04
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="welcome">
+      <div class="welcome__info">
+        <p class="heading--2" aria-hidden="true">
+          Welcome
+        </p>
+
+        <h2 class="heading--3">
+          Welcome to Arch Studio
+        </h2>
+
+        <p class="text--1">
+          We have a unique network and skillset to help bring your projects to life. Our
+          small team of highly skilled individuals combined with our large network put us
+          in a strong position to deliver exceptional results.
+        </p>
+
+        <p class="text--1">
+          Over the past 10 years, we have worked on all kinds of projects. From stations
+          to high-rise buildings, we create spaces that inspire and delight.
+        </p>
+
+        <p class="text--1">
+          We work closely with our clients so that we understand the intricacies of each
+          project. This allows us to work in harmony the surrounding area to create truly
+          stunning projects that will stand the test of time.
+        </p>
+      </div>
+      <img aria-hidden="true" width="350" height="560" class="welcome__img" src="assets/home/desktop/image-welcome.jpg"
+        srcset="assets/home/desktop/image-welcome.webp, assets/home/desktop/image-welcome.jpg" alt="Welcome">
+    </article>
+
+    <article class="team">
+      <div class="team__info">
+        <h2 class="heading--4">
+          Small team, big ideas
+        </h2>
+
+        <a class="btn btn--primary" href="about.html">About Us</a>
+      </div>
+
+      <picture class="team__picture">
+        <source media="(min-width: 1024px)" width="1110" height="560"
+          srcset="assets/home/desktop/image-small-team.webp, assets/home/desktop/image-small-team.jpg">
+        <source media="(min-width: 768px)" width="573" height="560"
+          srcset="assets/home/tablet/image-small-team.webp, assets/home/tablet/image-small-team.jpg">
+        <img width="375" height="560" class="team__img" src="assets/home/mobile/image-small-team.jpg"
+          srcset="assets/home/mobile/image-small-team.webp, assets/home/mobile/image-small-team.jpg" alt="Small Team">
+      </picture>
+    </article>
+
+    <article class="featured">
+      <div class="featured__info">
+        <h2 class="heading--3">
+          Featured
+        </h2>
+
+        <a href="portfolio.html" class="btn btn--primary">
+          See all
+        </a>
+      </div>
+
+      <ol>
+        <li>
+          <p class="text--2">
+            Project Del Sol
+          </p>
+          <a href="portfolio.html">
+            View All Projects
+          </a>
+          <picture class="featured__picture">
+            <source media="(min-width: 1024px)" width="350" height="560"
+              srcset="assets/portfolio/desktop/image-del-sol.webp, assets/portfolio/desktop/image-del-sol.jpg">
+            <source media="(min-width: 768px)" width="573" height="240"
+              srcset="assets/portfolio/tablet/image-del-sol.webp, assets/portfolio/tablet/image-del-sol.jpg">
+            <img width="311" height="240" class="featured__img" src="assets/portfolio/image-del-sol.jpg"
+              srcset="assets/portfolio/mobile/image-del-sol.webp, assets/portfolio/mobile/image-del-sol.jpg"
+              alt="del sol">
+          </picture>
+        </li>
+
+        <li>
+          <p class="text--2">
+            228B Tower
+          </p>
+          <a href="portfolio.html">
+            View All Projects
+          </a>
+          <picture class="featured__picture">
+            <source media="(min-width: 1024px)" width="350" height="560"
+              srcset="assets/portfolio/desktop/image-228b.webp, assets/portfolio/desktop/image-228b.jpg">
+            <source media="(min-width: 768px)" width="573" height="240"
+              srcset="assets/portfolio/tablet/image-228b.webp, assets/portfolio/tablet/image-228b.jpg">
+            <img width="311" height="240" class="featured__img" src="assets/portfolio/image-228b.jpg"
+              srcset="assets/portfolio/mobile/image-228b.webp, assets/portfolio/mobile/image-228b.jpg"
+              alt="228B Tower Facade">
+          </picture>
+        </li>
+
+        <li>
+          <p class="text--2">
+            Le Prototype
+          </p>
+          <a href="portfolio.html">
+            View All Projects
+          </a>
+          <picture class="featured__picture">
+            <source media="(min-width: 1024px)" width="350" height="560"
+              srcset="assets/portfolio/desktop/image-prototype.webp, assets/portfolio/desktop/image-prototype.jpg">
+            <source media="(min-width: 768px)" width="573" height="240"
+              srcset="assets/portfolio/tablet/image-prototype.webp, assets/portfolio/tablet/image-prototype.jpg">
+            <img width="311" height="240" class="featured__img" src="assets/portfolio/image-prototype.jpg"
+              srcset="assets/portfolio/mobile/image-prototype.webp, assets/portfolio/mobile/image-prototype.jpg"
+              alt="Le Prototype">
+          </picture>
+        </li>
+      </ol>
+    </article>
+  </main>
+  <footer class="footer">
+    <ul class="footer__menu">
+      <li>
+        <a href="#">
+          <span class="visually-hidden">Home</span>
+          <svg class="icon icon--logo" aria-hidden="true">
+            <use href="assets/icons/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="portfolio.html">Portfolio</a>
+      </li>
+      <li>
+        <a href="about.html">About Us</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+      <li>
+        <a href="#">See Our Portfolio</a>
+      </li>
+    </ul>
+  </footer>
+
 </body>
 
 </html>
