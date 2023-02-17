@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Front-end Mentor Arch Studio multi-page website challenge">
-  <meta name="color-scheme" content="dark">
+  <meta name="color-scheme" content="dark light">
 
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
   <link rel="stylesheet" href="stylesheets/main.scss">
@@ -15,18 +15,17 @@
   <title>Arch Studio Home</title>
 </head>
 
-<body class="body">
+<body class="body theme--light">
   <header class="header">
     <nav class="header__nav">
+      <input type="checkbox" id="header__nav-toggle" class="visually-hidden header__nav-toggle">
+      <a class="header__logo" href="#">
+        <span class="visually-hidden">Home</span>
+        <svg class="icon icon--logo" aria-hidden="true">
+          <use href="./assets/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
       <ul class="header__menu">
-        <li>
-          <a href="#">
-            <span class="visually-hidden">Home</span>
-            <svg class="icon icon--logo" aria-hidden="true">
-              <use href="./assets/icons/icons.svg#icon-logo"></use>
-            </svg>
-          </a>
-        </li>
         <li>
           <a href="portfolio.html">Portfolio</a>
         </li>
@@ -37,6 +36,11 @@
           <a href="contact.html">Contact</a>
         </li>
       </ul>
+      <label for="header__nav-toggle" class="header__nav-toggle-label">
+        <svg class="icon icon--hamburger">
+          <use href="assets/icons.svg#icon-hamburger"></use>
+        </svg>
+      </label>
     </nav>
   </header>
   <main class="main">
@@ -44,7 +48,7 @@
     <article class="hero">
       <h2 class="visually-hidden">Highlighted Projects</h2>
       <ul class="carousel" data-carousel>
-        <li class="hero__card">
+        <li class="hero__card carousel__card">
           <picture class="carousel__picture">
             <source media="(min-width: 1024px)" width="1110" height="720"
               srcset="assets/home/desktop/image-hero-paramour.webp, assets/home/desktop/image-hero-paramour.jpg">
@@ -54,20 +58,27 @@
               srcset="assets/home/mobile/image-hero-paramour.webp, assets/home/mobile/image-hero-paramour.jpg"
               alt="Project Paramour building facade">
           </picture>
-          <h3 class="heading--1">
-            Project Paramour
-          </h3>
+          <div class="hero__info">
+            <div class="group">
+              <h3 class="heading--1">
+                Project Paramour
+              </h3>
 
-          <p class="text--1">
-            Project made for an art museum near Southwest London. Project Paramour is
-            a statement of bold, modern architecture.
-          </p>
+              <p class="text--1">
+                Project made for an art museum near Southwest London. Project Paramour is
+                a statement of bold, modern architecture.
+              </p>
+            </div>
 
-          <a href="portfolio.html" class="btn btn--primary">
-            See Our Portfolio
-          </a>
+            <a href="portfolio.html" class="btn btn--primary">
+              <span>See Our Portfolio</span>
+              <svg class="icon icon--arrow icon--light">
+                <use href="assets/icons.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
         </li>
-        <li class="hero__card">
+        <li class="hero__card carousel__card">
           <picture class="carousel__picture">
             <source media="(min-width: 1024px)" width="1110" height="720"
               srcset="assets/home/desktop/image-hero-seraph.webp, assets/home/desktop/image-hero-seraph.jpg">
@@ -77,22 +88,29 @@
               srcset="assets/home/mobile/image-hero-seraph.webp, assets/home/mobile/image-hero-seraph.jpg"
               alt="Project Seraph interior">
           </picture>
-          <h3 class="heading--1">
-            Seraph Station
-          </h3>
+          <div class="hero__info">
+            <div class="group">
+              <h3 class="heading--1">
+                Seraph Station
+              </h3>
 
-          <p class="text--1">
-            The Seraph Station project challenged us to design a unique station that would
-            transport people through time. The result is a fresh and futuristic model
-            inspired by space stations.
-          </p>
+              <p class="text--1">
+                The Seraph Station project challenged us to design a unique station that would
+                transport people through time. The result is a fresh and futuristic model
+                inspired by space stations.
+              </p>
+            </div>
 
-          <a href="portfolio.html" class="btn btn--primary">
-            See Our Portfolio
-          </a>
+            <a href="portfolio.html" class="btn btn--primary">
+              <span>See Our Portfolio</span>
+              <svg class="icon icon--arrow icon--light">
+                <use href="assets/icons.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
         </li>
 
-        <li class="hero__card">
+        <li class="hero__card carousel__card">
           <picture class="carousel__picture">
             <source media="(min-width: 1024px)" width="1110" height="720"
               srcset="assets/home/desktop/image-hero-federal.webp, assets/home/desktop/image-hero-federal.jpg">
@@ -102,21 +120,28 @@
               srcset="assets/home/mobile/image-hero-federal.webp, assets/home/mobile/image-hero-federal.jpg"
               alt="Federal Tower Project Facade">
           </picture>
-          <h3 class="heading--1">
-            Federal II Tower
-          </h3>
+          <div class="hero__info">
+            <div class="group">
+              <h3 class="heading--1">
+                Federal II Tower
+              </h3>
 
-          <p class="text--1">
-            A sequel theme project for a tower originally built in the 1800s. We achieved
-            this with a striking look of brutal minimalism with modern touches.
-          </p>
+              <p class="text--1">
+                A sequel theme project for a tower originally built in the 1800s. We achieved
+                this with a striking look of brutal minimalism with modern touches.
+              </p>
+            </div>
 
-          <a href="portfolio.html" class="btn btn--primary">
-            See Our Portfolio
-          </a>
+            <a href="portfolio.html" class="btn btn--primary">
+              <span>See Our Portfolio</span>
+              <svg class="icon icon--arrow icon--light">
+                <use href="assets/icons.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
         </li>
 
-        <li class="hero__card">
+        <li class="hero__card carousel__card">
           <picture class="carousel__picture">
             <source media="(min-width: 1024px)" width="1110" height="720"
               srcset="assets/home/desktop/image-hero-trinity.webp, assets/home/desktop/image-hero-trinity.jpg">
@@ -126,19 +151,26 @@
               srcset="assets/home/mobile/image-hero-trinity.webp, assets/home/mobile/image-hero-trinity.jpg"
               alt="Trinity Bank Tower Facade">
           </picture>
-          <h3 class="heading--1">
-            Trinity Bank Tower
-          </h3>
+          <div class="hero__info">
+            <div class="group">
+              <h3 class="heading--1">
+                Trinity Bank Tower
+              </h3>
 
-          <p class="text--1">
-            Trinity Bank challenged us to make a concept for a 84 story building located
-            in the middle of a city with a high earthquake frequency. For this project we
-            used curves to blend design and stability to meet our objectives.
-          </p>
+              <p class="text--1">
+                Trinity Bank challenged us to make a concept for a 84 story building located
+                in the middle of a city with a high earthquake frequency. For this project we
+                used curves to blend design and stability to meet our objectives.
+              </p>
+            </div>
 
-          <a href="portfolio.html" class="btn btn--primary">
-            See Our Portfolio
-          </a>
+            <a href="portfolio.html" class="btn btn--primary">
+              <span>See Our Portfolio</span>
+              <svg class="icon icon--arrow icon--light">
+                <use href="assets/icons.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
         </li>
       </ul>
 
@@ -281,10 +313,10 @@
   <footer class="footer">
     <ul class="footer__menu">
       <li>
-        <a href="#">
+        <a href="#" class="footer__logo">
           <span class="visually-hidden">Home</span>
-          <svg class="icon icon--logo" aria-hidden="true">
-            <use href="assets/icons/icons.svg#icon-logo"></use>
+          <svg class="icon icon--logo icon--light" aria-hidden="true">
+            <use href="assets/icons.svg#icon-logo"></use>
           </svg>
         </a>
       </li>

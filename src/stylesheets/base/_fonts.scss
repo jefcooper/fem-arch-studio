@@ -17,3 +17,13 @@
     url("../../assets/fonts/LeagueSpartan-Bold.ttf") format("truetype");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 800;
+  src: local("League Spartan"),
+    url("../../assets/fonts/LeagueSpartan-ExtraBold.woff2") format("woff2"),
+    url("../../assets/fonts/LeagueSpartan-ExtraBold.ttf") format("truetype");
+  font-display: swap;
+}

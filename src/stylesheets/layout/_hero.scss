@@ -1,0 +1,18 @@
+.hero__card {
+  position: relative;
+}
+.hero__info {
+  position: absolute;
+  display: grid;
+  align-content: end;
+  bottom: 6.875rem;
+  padding-inline: 2rem;
+  gap: 2rem;
+}
+.hero__card .text--1 {
+  margin-top: 2rem;
+}
+.hero__card .btn {
+  padding-block: 1.5rem;
+  padding-inline: 2rem;
+}

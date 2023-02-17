@@ -1,0 +1,57 @@
+.carousel {
+  list-style: none;
+  padding-inline: 0;
+  display: flex;
+  overflow-y: scroll;
+  scroll-snap-type: inline mandatory;
+  overscroll-behavior: inline contain;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel__picture {
+  filter: brightness(65%);
+  //width: 100vw;
+  /*
+  --container-max-width: 1279px;
+  --container-padding-inline: 1rem;
+  */
+  width: calc(
+    //min(100vw, var(--container-max-width)) - 2 * var(--container-padding-inline)
+    min(100vw, var(--container-max-width))
+  );
+}
+.carousel__img {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+.carousel__card {
+  scroll-snap-align: center;
+  width: 100%;
+}
+
+.xcarousel__strip {
+  /* snap scrolling with touch or programmatic with buttons */
+  overflow: scroll;
+  scroll-snap-type: inline mandatory; /* enable horizontal snapping on items */
+  overscroll-behavior: inline contain; /* prevent bounce at end of scroll */
+  scrollbar-width: none; /* hide scrollbar on Firefox */
+
+  display: flex;
+  gap: 1.875rem;
+  width: 100vw;
+  height: 180px;
+  margin-top: 2rem;
+  padding-inline: max(0px, 50vw - 135px);
+}
+.xcarousel__strip::-webkit-scrollbar {
+  /* hide scrollbar on webkit browsers */
+  display: none;
+}
+.xcarousel__strip img {
+  scroll-snap-align: center;
+
+  border-radius: 10px;
+}

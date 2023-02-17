@@ -1,17 +1,36 @@
 .icon {
   display: inline-block;
+  user-select: none;
+  cursor: pointer;
+  fill: var(--theme-icon-clr);
+}
+
+.icon--light {
+  fill: var(--theme-icon-clr-light);
 }
 
 .icon--logo {
   width: 97px;
   height: 40px;
-  fill: var(--theme-icon-fill);
-  stroke: var(--theme-icon-stroke);
+}
+
+.icon--hamburger {
+  width: 24px;
+  height: 17px;
+}
+
+.icon--close {
+  width: 20px;
+  height: 21px;
+}
+
+.icon--arrow {
+  width: 26px;
+  height: 20px;
+  stroke: var(--theme-icon-clr-light);
 }
 
 .icon--left-arrow {
   width: 18px;
   height: 18px;
-  fill: var(--theme-icon-clr);
-  stroke: none;
 }

@@ -15,6 +15,29 @@
   line-height: 1;
 }
 
+.heading--1 {
+  @include font-base;
+  font-size: clamp(3rem, calc(0.6rem + 12vw), 6rem);
+  font-weight: 700;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  color: var(--theme-clr-light);
+}
+
+.text--1 {
+  @include font-base;
+  font-size: 1.125rem;
+  line-height: 1.333;
+  color: var(--theme-clr-light);
+  backdrop-filter: blur(0.5rem);
+  border-radius: 0.5rem;
+}
+.btn {
+  @include font-base;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
 .text--center {
   text-align: center;
 }

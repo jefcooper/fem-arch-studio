@@ -1,8 +1,54 @@
 @use "../abstracts/mixins";
+@use "../abstracts/functions";
 
 .header {
 }
 
+.header__nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
 .header__menu {
+  position: absolute;
+  z-index: 2;
+  top: 5rem;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
   list-style: none;
+
+  background-color: white;
+}
+
+.header__nav-toggle:checked ~ .header__menu {
+  display: flex;
+}
+.header__logo {
+}
+
+/*----------------------------------------------------------------------------
+  Tablet breakpoint
+ ----------------------------------------------------------------------------*/
+@include mixins.media-breakpoint("tablet") {
+  .header__nav {
+    justify-content: start;
+  }
+  .header__menu {
+    position: relative;
+    display: flex;
+    top: auto;
+    left: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.5rem;
+  }
+  .header__nav-toggle-label {
+    display: none;
+  }
 }
